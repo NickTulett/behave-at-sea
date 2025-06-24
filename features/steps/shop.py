@@ -15,6 +15,7 @@ def check_basket(context):
 
 @then('she can see her basket contains only her chosen items')
 def confirm_basket_contents(context):
+    # TODO add subtotal check
     for i in range(len(context.selections)):
         selection = context.selections[i]
         expected_basket_line = selection['Item'] + "Quantity  " + selection['Count'] + "remove" + selection['Price']

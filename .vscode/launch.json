@@ -5,7 +5,7 @@
     "request": "launch",
     "module": "behave",
     "console": "integratedTerminal",
-    "args": ["${workspaceFolder}/features"],
+    "args": ["${file}"],
     },
   ]
 }

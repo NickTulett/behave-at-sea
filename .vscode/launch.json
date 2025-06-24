@@ -7,5 +7,13 @@
     "console": "integratedTerminal",
     "args": ["${file}"],
     },
+    {
+    "name": "Python: Behave all features",
+    "type": "debugpy",
+    "request": "launch",
+    "module": "behave",
+    "console": "integratedTerminal",
+    "args": ["${workspaceFolder}/features"],
+    },
   ]
 }

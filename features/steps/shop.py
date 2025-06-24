@@ -18,5 +18,5 @@ def confirm_basket_contents(context):
     # TODO add subtotal check
     for i in range(len(context.selections)):
         selection = context.selections[i]
-        expected_basket_line = selection['Item'] + "Quantity  " + selection['Count'] + "remove" + selection['Price']
+        expected_basket_line = f"{selection['Item']}Quantity  {selection['Count']}remove{selection['Price']}"
         assert expected_basket_line == context.basket_items[i]

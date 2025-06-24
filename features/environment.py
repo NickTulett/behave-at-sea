@@ -1,6 +1,5 @@
 from behave import fixture, use_fixture
 from playwright.sync_api import sync_playwright
-from typing import Generator
 
 @fixture
 def browser_page(context):
